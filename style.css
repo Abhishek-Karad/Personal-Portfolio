@@ -13,6 +13,33 @@ body.dark-mode {
   background: #1a1a1a;
   color: #eaeaea;
 }
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 350px; /* Control the size of the image */
+  height: auto;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Adds border radius to the image */
+}
+
+.about-text {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 /* Container */
 .container {
@@ -83,7 +110,7 @@ body.dark-mode .nav-links li a:hover {
   background: linear-gradient(135deg, #009688, #ff9800);
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 40px;
 }
 
 .hero h2 {
@@ -94,6 +121,14 @@ body.dark-mode .nav-links li a:hover {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+}
+
+body.dark-mode .hero a {
+  color: #ffb347;
+}
+
+body.dark-mode .hero a:hover {
+  color: #ff9800;
 }
 
 /* Button */
@@ -111,6 +146,7 @@ body.dark-mode .nav-links li a:hover {
 .btn:hover {
   background-color: #e1e1e1;
   color: #ff6f00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode .btn {
@@ -121,6 +157,7 @@ body.dark-mode .btn {
 body.dark-mode .btn:hover {
   background-color: #444;
   color: #ffa94d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
@@ -170,6 +207,7 @@ body.dark-mode .section h2 {
 
 .skill-box:hover {
   transform: translateY(-5px);
+  background: #e0f7fa;
 }
 
 .skill-box h3 {
@@ -250,7 +288,7 @@ body.dark-mode .project-card p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.dark-mode .experience-card {
+body.dark-mode .experience-card {
   background-color: #222;
   color: #ddd;
 }
@@ -258,7 +296,7 @@ body.dark-mode .project-card p {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   background-color: #004d4d;
   color: #ffffff;
   font-size: 0.9rem;
@@ -266,6 +304,7 @@ footer {
 
 body.dark-mode footer {
   background-color: #111;
+  padding: 30px 20px;
 }
 
 /* Theme Toggle */
@@ -275,11 +314,16 @@ body.dark-mode footer {
   cursor: pointer;
   font-size: 1.2rem;
   color: #6a11cb;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.3s ease;
 }
 
 #theme-toggle:hover {
   transform: scale(1.1);
+  color: #ff9800;
+}
+
+body.dark-mode #theme-toggle {
+  color: #ffa94d;
 }
 
 /* Responsive */
@@ -349,5 +393,12 @@ body.dark-mode footer {
 
   .hero p {
     font-size: 0.9rem;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
