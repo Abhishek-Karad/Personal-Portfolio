@@ -1,469 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek Karad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=BeDidZchwnxG&format=png&color=000000" />
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
+
 <body>
-  <!-- Animated Background -->
-  <div class="grid-bg"></div>
-  <div class="orb-container">
-    <div class="orb"></div>
-    <div class="orb"></div>
-    <div class="orb"></div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Abhishek<span>Karad</span></h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Theme toggle -->
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h2>👋 Hey, I’m <span>Abhishek</span></h2>
+        <p>
+          I’m a Software Developer who enjoys building clean, scalable web applications and integrating AI-driven solutions to make technology more efficient and human-friendly.
+        </p>
+        <div class="hero-links">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./Abhishek_Karad_image.jpg" alt="Abhishek Karad" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+<section id="about" class="container section">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-subtitle">
+    B.Tech in Electronics & Communication (AI & ML) — MIT-WPU Pune
+  </p>
+
+  <div class="about-text">
+    <p>
+      I’m a developer passionate about turning complex problems into simple, functional, and impactful products.
+    </p>
+    <p>
+      I specialize in <strong>JavaScript</strong>, <strong>Python</strong>, and <strong>cloud-based full-stack development</strong>, 
+      building applications that combine strong backend logic with clean, intuitive user interfaces.
+    </p>
+    <p>
+      My focus is on creating software that not only performs efficiently but also provides a smooth and enjoyable user experience.
+    </p>
+    <p>
+      I’m currently exploring <strong>Machine Learning</strong> and its practical implementations across real-world use cases.
+    </p>
   </div>
+</section>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about" class="nav-item">About</a>
-    <a href="#skills" class="nav-item">Skills</a>
-    <a href="#projects" class="nav-item">Projects</a>
-    <a href="#contact" class="nav-item">Contact</a>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">🚀 Available for hire</div>
-      <h1>Abhishek Karad</h1>
-      <p class="hero-subtitle">
-        Full Stack Developer & AI/ML Engineer<br>
-        Working Towards Building Creative Solutions
-      </p>
-      <div class="cta-group">
-        <a href="#contact" class="cta-primary">Let's Connect</a>
-        <a href="#projects" class="cta-secondary">View Work</a>
-      </div>
-    </div>
-  </section>
+  <!-- Skills -->
+  <section id="skills" class="container section">
+    <h2 class="section-title">Tech Stack</h2>
+    <p class="section-subtitle">Languages, frameworks, and tools I use</p>
 
-  <!-- About Section -->
-  <section id="about" class="section fade-in">
-    <div class="section-header">
-      <div class="section-badge">About Me</div>
-      <h2 class="section-title">B-Tech Electronics and Telecomunnication Student </h2>
-      <p class="section-description">
-        Passionate developer with expertise in full-stack development and AI/ML integration
-      </p>
+    <!-- Languages -->
+    <div class="tech-card full">
+      <div class="tech-icon"><i class="fa-solid fa-terminal"></i></div>
+      <h3>Programming Languages</h3>
+      <p>My core languages for software development, logic, and problem-solving.</p>
+      <ul>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C</li>
+      </ul>
     </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I'm Abhishek Karad, currently pursuing B.Tech in ECE with specialization in AI & ML at MIT WPU Pune.</p>
-        <p>I am a Full Stack Developer with learning interests in Cloud Computing and Machine Learning.</p>
-        <p>I have worked with Multiple Tech Stacks with the aim of being comfortable with the development environment.</p>
-        <p>I am Proficient in building Full Stack Applications and currently working on integrating it with Machine Learning and AI.</p>
-      </div>
-      <div class="profile-container">
-        <div class="profile-frame">
-          <img src="./Abhishek_Karad_image.jpg" alt="Abhishek Karad" class="profile-img">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section fade-in">
-    <div class="section-header">
-      <div class="section-badge">Skills</div>
-      <h2 class="section-title">Tech Arsenal</h2>
-      <p class="section-description">
-        Technologies and tools I work with
-      </p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-header">
-          <div class="skill-icon">🌐</div>
-          <h3>Frontend Development</h3>
-        </div>
-        <ul class="skill-list">
-          <li>HTML5, CSS3, JavaScript ES6+</li>
+    <!-- Four main skill boxes -->
+    <div class="tech-grid four">
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>HTML5, CSS3, JavaScript (ES6+)</li>
           <li>React.js, Next.js</li>
-          <li>Bootstrap, Tailwind CSS</li>
-          <li>Responsive Design</li>
+          <li>Tailwind CSS, Bootstrap</li>
+          <li>Framer Motion, UI/UX</li>
         </ul>
       </div>
-      <div class="skill-card">
-        <div class="skill-header">
-          <div class="skill-icon">⚙️</div>
-          <h3>Backend Development</h3>
-        </div>
-        <ul class="skill-list">
+
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend Development</h3>
+        <ul>
           <li>Node.js, Express.js</li>
           <li>Flask, Python</li>
-          <li>RESTful APIs</li>
-          <li>Mongoose, Sequelize</li>
+          <li>REST APIs, JWT Auth</li>
+          <li>Serverless Functions</li>
         </ul>
       </div>
-      <div class="skill-card">
-        <div class="skill-header">
-          <div class="skill-icon">🗄️</div>
-          <h3>Database & Cloud</h3>
-        </div>
-        <ul class="skill-list">
+
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database & Cloud</h3>
+        <ul>
           <li>MongoDB, MySQL</li>
-          <li>AWS RDS, S3</li>
+          <li>AWS (Lambda, RDS, S3)</li>
+          <li>Vercel, Render, Netlify</li>
           <li>Database Design</li>
-          <li>Cloud Deployment</li>
         </ul>
       </div>
-      <div class="skill-card">
-        <div class="skill-header">
-          <div class="skill-icon">🤖</div>
-          <h3>AI/ML & Tools</h3>
-        </div>
-        <ul class="skill-list">
+
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI / Tools</h3>
+        <ul>
           <li>Python, Pandas, Scikit-learn</li>
           <li>Data Visualization</li>
-          <li>Git & GitHub</li>
-          <li>Figma, AWS, Twilio</li>
+          <li>Git, GitHub, Docker</li>
+          <li>Figma, Postman</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section fade-in">
-    <div class="section-header">
-      <div class="section-badge">Journey</div>
-      <h2 class="section-title">Experience</h2>
-    </div>
-    <div class="experience-grid">
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Software Development – OMNIFEED </h3>
-          <span class="experience-duration">June 2025 – Present</span>
-        </div>
-        <p class="experience-company"><strong>Pune</strong></p>
-        <p class="experience-description">
-        Developing custom Product-as-a-Service (PaaS) solutions for diverse clients while designing and managing efficient workflows to enhance productivity and optimize existing systems.
-        </p>
-      </div>
-       <div class="experience-card">
-        <div class="experience-header">
-          <h3>SIH-25 - National Level Qualification</h3>
-          <span class="experience-duration">September 2025</span>
-        </div>
-        <p class="experience-company"><strong>Team: LERNIX</strong></p>
-        <p class="experience-description">
-          Developed LERNIX, an automated attendance and academic monitoring platform with QR/GPS-based logging,
-dashboards, and real-time alerts for multi-college institutions.
-– Integrated voice-based teaching logs, ML-verified certificate uploads, and automated notifications, reducing
-manual admin effort.
-– Advanced to the National Level after multiple institutional rounds, showcasing full-stack and AI integration capabilitie
-      </div>
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      A selection of my featured work — explore more on 
+      <a href="https://github.com/Abhishek-Karad" target="_blank">GitHub</a>
+    </p>
 
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Backend Developer – OMNIFEED </h3>
-          <span class="experience-duration">May 2025 – June 2025</span>
-        </div>
-        <p class="experience-company"><strong>MIT World Peace University Pune</strong></p>
-        <p class="experience-description">
-As a Backend Developer at OMNIFEED (MIT-WPU Knowledge Resource Center), I developed a serverless AI-powered feedback system using Node.js, AWS Lambda, and DynamoDB, integrated with the Meta WhatsApp Business API for real-time PRN-authenticated feedback. The system supported dynamic question flows, book requests, and semantic analysis, with an admin dashboard for trend monitoring — enhancing efficiency and providing insights through conversational AI.        </p>
-      </div>
-      
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Vice President</h3>
-          <span class="experience-duration">January 2024 – Present</span>
-        </div>
-        <p class="experience-company"><strong>CoDeC Club</strong></p>
-        <p class="experience-description">
-          Working as President of the club, Successfully organizing events and activities in the club as well at the college level. Leading the Web Development Project Department and building scalable concepts in a collaborative manner!
-        </p>
-      </div>
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>SIH-24 - College Level</h3>
-          <span class="experience-duration">December 2024</span>
-        </div>
-        <p class="experience-company"><strong>Team: Neural Navigators</strong></p>
-        <p class="experience-description">
-          Collaborated on a college-level project using IoT sensors and AI for real-time traffic optimization. Implemented dynamic signal control, emergency lane management, and traffic prediction models to improve congestion flow.
-        </p>
-      </div>
-    </div>
-    
-    <!-- Certifications -->
-    <div class="certifications">
-      <h3>Certifications</h3>
-      <div class="cert-grid">
-        <div class="cert-item">NodeJS – The Complete Guide - Udemy</div>
-        <div class="cert-item">The Web Developer Bootcamp 2024 - Udemy</div>
-        <div class="cert-item">Beginning C++ Programming - Udemy</div>
-        <div class="cert-item">Python for Data Science and Machine Learning Bootcamp - Udemy</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section fade-in">
-    <div class="section-header">
-      <div class="section-badge">🚀 Projects</div>
-      <h2 class="section-title">Featured Work</h2>
-      <p class="section-description">
-        A showcase of my recent projects and technical achievements
-      </p>
-    </div>
     <div class="projects-grid">
-       <div class="project-card">
-        <div class="project-header">
-          <h3>Precision Farming Dashboard </h3>
-          <div class="project-links">
-            <a href="https://precision-farming-dashboard.vercel.app/" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-Agro DBMS is a smart farming platform that optimizes drone-based spraying and fertilizer management through real-time analytics and AI-driven insights, enabling efficient resource use, reduced wastage, and data-driven agricultural decisions.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">ReactJS</span>
-          <span class="tech-tag">NodeJS</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Matlab</span>
-          <span class="tech-tag">GenAi</span>
-          <span class="tech-tag">Vercel</span>
-          
-        </div>
-      </div>
-       <div class="project-card">
-        <div class="project-header">
-          <h3>Hospital Managment System </h3>
-          <div class="project-links">
-            <a href="https://precision-farming-dashboard.vercel.app/" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-The Hospital Management System is a full-stack web application designed to simplify hospital operations by managing patients, doctors, and appointments through an intuitive dashboard. Built with React, Node.js, Express, and MySQL, it enables real-time management of records and analytics. A planned WhatsApp chatbot feature will allow conversational appointment booking, making the system efficient, scalable, and user-friendly for modern healthcare needs.        </p>
-        <div class="project-tech">
-          <span class="tech-tag">ReactJS</span>
-          <span class="tech-tag">NodeJS</span>
-          <span class="tech-tag">MySQL</span>
-          <span class="tech-tag">WhatsApp API</span>
-         
-          
-        </div>
-      </div>
-        <div class="project-card">
-        <div class="project-header">
-          <h3>Stay Manager </h3>
-          <div class="project-links">
-            <a href="https://github.com/Abhishek-Karad/Resort-admin-side" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-Developed a responsive resort management dashboard unifying bookings, expenses, and calendar operations.
-– Adopted by a resort for daily use, providing real-time visibility into occupancy and financial metrics</p>
-
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Flask</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Vercel</span>
-          
-        </div>
-      </div>
-         <div class="project-card">
-        <div class="project-header">
-          <h3>OMNIFEED – AI Feedback Chatbot</h3>
-          <div class="project-links">
-            <a href="https://github.com/Abhishek-Karad/" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-         Built a serverless feedback system for MIT-WPU’s Knowledge Resource Center using Node.js, AWS Lambda, and DynamoDB. Integrated WhatsApp Business API for real-time, PRN-authenticated feedback collection. Features include dynamic question flow, book requests, semantic analysis, and an admin dashboard for insights and service management.
-
-
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">NodeJS</span>
-          <span class="tech-tag">Agno</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">AWS</span>
-          <span class="tech-tag">WhatsApp API </span>
-        </div>
+      <div class="project-card">
+        <h3>OMNIFEED – AI Chatbot</h3>
+        <p>AI-powered feedback chatbot using AWS Lambda and WhatsApp Business API for real-time interaction.</p>
+        <p class="stack">Node.js | AWS | DynamoDB | WhatsApp API</p>
+        <a href="https://github.com/Abhishek-Karad" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
 
       <div class="project-card">
-        <div class="project-header">
-          <h3>Pune Tourism Website</h3>
-          <div class="project-links">
-            <a href="https://github.com/Abhishek-Karad/Pune-Tourism" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-          Developed a comprehensive tourism platform showcasing Pune's top hotels, restaurants, events, and markets. Leveraged MongoDB, Express.js, React, and Node.js for dynamic content management.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Express</span>
-        </div>
+        <h3>Precision Farming Dashboard</h3>
+        <p>AI-driven dashboard that analyzes drone and field data to optimize crop management and fertilizer use.</p>
+        <p class="stack">React | Node.js | MongoDB | MATLAB | GenAI | Vercel</p>
+        <a href="https://precision-farming-dashboard.vercel.app/" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
 
       <div class="project-card">
-        <div class="project-header">
-          <h3>E-commerce Platform</h3>
-          <div class="project-links">
-            <a href="https://e-commerce-website-6jdt.onrender.com" class="project-link" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-          Designed and developed a full-stack web application using the MVC architecture. Integrated MongoDB, Express.js, Node.js, and Mongoose for efficient data management. Implemented JWT authentication.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">MVC</span>
-          <span class="tech-tag">JWT</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Node.js</span>
-        </div>
+        <h3>Stay Manager</h3>
+        <p>Responsive resort management app for handling bookings, expenses, and live occupancy reports.</p>
+        <p class="stack">Flask | MongoDB | Vercel</p>
+        <a href="https://github.com/Abhishek-Karad/Resort-admin-side" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
-
 
       <div class="project-card">
-        <div class="project-header">
-          <h3>Car Price Prediction</h3>
-          <div class="project-links">
-            <a href="https://github.com/Abhishek-Karad/Machine-Learning/blob/main/Car-predict.ipynb" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="project-description">
-          Developed a machine learning model to predict car prices using a CSV dataset. Utilized Pandas, Seaborn, and Scikit-Learn for data preprocessing, visualization, and model training.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Scikit-Learn</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Data Analysis</span>
-        </div>
+        <h3>Hospital Management System</h3>
+        <p>Comprehensive hospital operations manager with dashboard analytics and chatbot integration.</p>
+        <p class="stack">React | Node.js | MySQL | WhatsApp API</p>
+        <a href="https://precision-farming-dashboard.vercel.app/" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
 
-
-   
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section fade-in">
-    <div class="contact">
-      <div class="section-header">
-        <div class="section-badge">📬 Get In Touch</div>
-        <h2 class="section-title" style="color: white;">Let's Build Something Amazing</h2>
-        <p class="section-description" style="color: #a0a0a0;">
-          Open for new projects and opportunities! Let's discuss how we can work together.
-        </p>
+      <div class="project-card">
+        <h3>ESP-Sensor Dashboard</h3>
+        <p>IoT web platform displaying live sensor data from ESP modules with real-time updates and analytics.  
+        Built under faculty mentorship to integrate hardware data with a modern web interface.</p>
+        <p class="stack">Express.js | IoT | ESP32/ESP8266 | MongoDB</p>
+        <a href="https://github.com/Abhishek-Karad/ESP-sensor-website" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
-      <div class="contact-buttons">
-        <a href="mailto:abhishekkarad29@gmail.com" class="contact-btn">
-          <i class="fas fa-envelope"></i>
-          Email Me
-        </a>
-        <a href="Abhishek Karad-Resume.pdf" download="Abhishek Karad=Resume.pdf" class="contact-btn">
-          <i class="fas fa-download"></i>
-          Download Resume
-        </a>
-        <a href="https://linkedin.com/in/abhishek-karad" class="contact-btn" target="_blank">
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
-        </a>
-        <a href="https://github.com/Abhishek-Karad" class="contact-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          GitHub
-        </a>
+
+      <div class="project-card">
+        <h3>Pune Tourism Website</h3>
+        <p>Dynamic MERN web platform showcasing hotels, events, and attractions across Pune city.</p>
+        <p class="stack">React | Node.js | MongoDB | Express</p>
+        <a href="https://github.com/Abhishek-Karad/Pune-Tourism" target="_blank"><i class="fab fa-github"></i> View</a>
+      </div>
+
+      <div class="project-card">
+        <h3>E-Commerce Platform</h3>
+        <p>Full-stack shopping web app featuring product management, secure JWT auth, and admin control.</p>
+        <p class="stack">Node.js | Express | MongoDB | JWT</p>
+        <a href="https://e-commerce-website-6jdt.onrender.com" target="_blank"><i class="fas fa-external-link-alt"></i> Visit</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Car Price Prediction</h3>
+        <p>Machine learning model predicting car prices using regression and feature engineering.</p>
+        <p class="stack">Python | Pandas | Scikit-Learn | ML</p>
+        <a href="https://github.com/Abhishek-Karad/Machine-Learning/blob/main/Car-predict.ipynb" target="_blank"><i class="fab fa-github"></i> View</a>
       </div>
     </div>
   </section>
+<section id="experience" class="container section">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
 
-  <!-- Footer -->
+    <!-- OMNIFEED Co-Founder -->
+    <div class="timeline-item">
+      <h3>
+        Co-Founder — OMNIFEED
+        <a href="https://www.omnifeed.in/" target="_blank" class="company-link-inline">
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </h3>
+      <span>June 2025 – Present</span>
+      <p>Designing scalable PaaS platforms and automating workflow systems for clients.</p>
+    </div>
+
+    <!-- OMNIFEED Backend Developer -->
+    <div class="timeline-item">
+      <h3>Backend Developer — OMNIFEED (MIT-WPU KRC)</h3>
+      <span>May 2025 – June 2025</span>
+      <p>Built an AI-powered feedback system using Node.js, AWS Lambda, and DynamoDB.</p>
+    </div>
+
+    <!-- CoDeC Club -->
+    <div class="timeline-item">
+      <h3>Vice President — CoDeC Club</h3>
+      <span>Jan 2024 – Present</span>
+      <p>Leading development projects and mentoring peers in full-stack and AI workflows.</p>
+    </div>
+
+    <!-- SIH -->
+    <div class="timeline-item">
+      <h3>Smart India Hackathon — National Finalist</h3>
+      <span>Sept 2025</span>
+      <p>Developed <strong>LERNIX</strong>, an AI-based academic tracking and attendance platform.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="container section contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">I’m always open to collaborations or exciting opportunities!</p>
+    <div class="contact-links">
+      <a href="mailto:abhishekkarad29@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="Abhishek Karad-Resume.pdf" download><i class="fas fa-download"></i> Resume</a>
+      <a href="https://linkedin.com/in/abhishek-karad" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Abhishek-Karad" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
   <footer>
-    <p>Abhishek Karad | Built with passion and modern web technologies</p>
+    <p>Abhishek Karad — Designed & Built by Me ❤️</p>
   </footer>
 
+  <!-- Theme Toggle -->
   <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
+    const toggleBtn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const icon = toggleBtn.querySelector('i');
+    const savedTheme = localStorage.getItem('theme');
 
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    if (savedTheme === 'dark') {
+      root.classList.add('dark');
+      icon.classList.replace('fa-moon', 'fa-sun');
+    }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Active navigation highlighting
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section[id]');
-      const navItems = document.querySelectorAll('.nav-item');
-      
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - 200)) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navItems.forEach(item => {
-        item.classList.remove('active');
-        if (item.getAttribute('href') === `#${current}`) {
-          item.classList.add('active');
-        }
-      });
-    });
-
-    // Parallax effect for orbs
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const orbs = document.querySelectorAll('.orb');
-      
-      orbs.forEach((orb, index) => {
-        const speed = 0.5 + (index * 0.1);
-        orb.style.transform = `translateY(${scrolled * speed}px)`;
-      });
+    toggleBtn.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      const isDark = root.classList.contains('dark');
+      icon.classList.toggle('fa-sun', isDark);
+      icon.classList.toggle('fa-moon', !isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
   </script>
 </body>
